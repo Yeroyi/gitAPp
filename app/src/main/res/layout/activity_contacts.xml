@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="联系人"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@mipmap/back" />
+
+        <ImageButton
+            android:id="@+id/ok_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@mipmap/ok" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/ok_btn"
+            android:layout_marginTop="5dp"
+            android:background="@color/black" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/add_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="添加联系人"
+        android:layout_below="@+id/relativeLayout"
+        android:background="@drawable/login_rect_white" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/act_main_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/add_contacts">
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>
